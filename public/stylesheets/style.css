@@ -1,0 +1,243 @@
+/* importing fonts from Google */ 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+  margin: 0px 1px 0px 1px;
+}
+
+body {
+  margin: auto;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background-color:rgb(255, 255, 255);
+}
+
+h1{
+  font-style: italic;
+}
+
+/* The top navigation bar with 
+links and search bar */
+.navBar {
+  display: block;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 20px;
+  border-bottom: 5px solid #d10404;
+  box-shadow: black, 2;
+}
+
+/* Style the links inside the navigation bar */
+.navBar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  
+}
+
+/* Change the color of links on hover */
+.navBar a:hover {
+  background-color: rgb(9, 128, 214);
+  color: black;
+  padding-bottom: 10px;
+  border-top-width: 2px;
+}
+
+
+/* Add a color to the active/current link */
+.navBar a.active {
+  background-color:#a82525;
+  color: white;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top-width: 2px;
+  margin-bottom: 0px;
+}
+
+.search-Div{
+  display: block;
+  float: right;
+  width: auto;
+}
+
+.search-Div input[type=text] {
+  float:left;
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 17px;
+}
+
+.search-Div .searchButton{
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  top: 7px;
+  float: left;
+  padding: 9px;
+  height: 100%;
+  background:rgb(9, 128, 214);
+  font-size: 17px;
+  color: white;
+  font-style: italic;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.search-Div .searchButton:hover{
+  
+  background:rgb(7, 115, 192);
+ 
+}
+
+.titleBox {
+  color:black;
+  text-transform: uppercase ;
+}
+
+.bodyText{
+  width: 70%;
+}
+
+.editButtons{
+  position: relative;
+  top: 10px;
+  left: 70px;
+  background: rgb(230, 230, 230);
+  box-shadow: 1px 1px 1px rgb(63, 63, 63) ;
+  border: 0px solid transparent;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+.editButtons button:hover {
+  background: rgb(223, 223, 223);
+  box-shadow: 1px 1px 1px rgb(63, 63, 63) ;
+  border: 0px solid transparent;
+  text-decoration: none;
+
+}
+
+.editButtons button:visited{
+  display: block;
+  background: rgb(112, 112, 112);
+  box-shadow: 1px 1px 1px rgb(63, 63, 63) ;
+  border: 0px solid transparent;
+  text-decoration: none;
+}
+
+/* blog creation box - governs label size and the div container */
+
+#titleHeader{
+  
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  position:relative;
+  left:50px;
+  top: 30px;
+  width: 30%;
+  height: auto;
+  background-color: rgb(24, 153, 199);
+  z-index: 1;
+}
+/* the blogEntry ID */
+#blogEntry{
+  display: block;
+  font-size: 1.2em;
+  text-indent: 0;
+  padding: 50px 30px 20px 30px;
+  width: 50%;
+  position:relative;
+  left:70px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(220, 220, 220);
+  box-shadow: -2px 5px 37px -11px rgba(174,174,174,0.47);
+  overflow-wrap: break-word;
+  white-space: pre-line;
+}
+
+div#blogpostCreate {
+  display: block;
+  font-size: 1.2em;
+  text-indent: 0;
+  padding: 50px 30px 20px 30px;
+  width: 50%;
+  position:relative;
+  left:70px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(220, 220, 220);
+  box-shadow: -2px 5px 37px -11px rgba(174,174,174,0.47);
+  overflow-wrap: break-word;
+  white-space: pre-line;
+}
+
+#blogEntryName{
+  
+  font-size: 1.2em;
+  padding: 1px;
+  margin:auto;
+  width: 80%;
+  height: auto;
+  background-color: rgb(233, 233, 233);
+}
+
+#headerUnderNav{
+  font-size: 2em;
+  letter-spacing: 5px;
+  padding-left: 15px;
+  text-shadow: rgb(0, 89, 255) 1px 0 8px;
+}
+
+/* Code help from w3schools.com
+The CSS styles for the actual text inputs*/
+
+/*blog title input*/
+input[type=text]{
+  font: 1em sans-serif;
+  width: auto;
+  padding: 15px;
+  margin: 0px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*the blog content input*/
+textarea{
+  font: .8em sans-serif;
+  width: 70%;
+  height: 100px;
+  padding: 10px;
+  margin: 0px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+ /* body of content on each page */
+#blogBody{
+  font-size: 1.2em;
+  padding: 50px 30px 20px 30px;
+  width: 50%;
+  position:relative;
+  left:70px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(220, 220, 220);
+  box-shadow: -2px 5px 37px -11px rgba(174,174,174,0.47);
+  overflow-wrap: break-word;
+}

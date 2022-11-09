@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <% include partials/header %>
+<body>
+<div id="blogpostCreate">
+  <div id="headerUnderNav">ADD A NEW BLOG POST</div>
+
+  <form action="/blogcreate" method="post">
+  <label class="blogTtitleBox">Title: </label>
+  <input type="text" name="blogtitle">
+  <label class="descriptionBox">Entry:</label>
+  <textarea type="textarea" name="blogentry" rows="20" cols="80"></textarea>
+  <br>
+  <button>submit</button>
+    </form>
+  </div>
+</body>
+</div>
+</html>

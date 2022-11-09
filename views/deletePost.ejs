@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <% include partials/header %>
+
+<body>
+  <div>
+    <thead>
+      <tr>Aaron's blog list:</tr>
+    </thead>
+    <tbody>
+      <td>
+        <% for(var i=0; i < bloglist.length; i++) { %>
+      </td>
+      <td>
+        <div id="titleHeader">
+          <%= bloglist[i].blogtitle %>
+        </div>
+      </td></td>
+      <td>
+        <div id="blogEntry">
+          <%= bloglist[i].blogentry %>
+        </div>
+      </td>
+      <tr>
+        <td>
+          <button>
+            <a href="https://www.google.com" type="submit">
+              Update
+        </a>
+            </button>
+        </td>
+        <td>
+          <button>
+            <a href="https://www.google.com" type="submit">
+              Delete
+            </a>
+          </button>
+        </td>
+      </tr>
+      <% } %>
+    </tbody>
+  </div>
+</body>
+
+</html>

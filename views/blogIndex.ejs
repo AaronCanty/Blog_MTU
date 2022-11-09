@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<% include partials/header %>
+
+  <body>
+    <div>
+      <div id="headerUnderNav">AARON'S BLOG</div>
+      <thead>
+      </thead>
+      <tbody>
+        <td>
+          <% for(var i=0; i < bloglist.length; i++) { %>
+        </td>
+        <td>
+          <div id="titleHeader">
+            <%= bloglist[i].blogtitle %>
+          </div>
+        </td>
+        </td>
+        <td>
+          <div id="blogEntry">
+            <%= bloglist[i].blogentry %>
+          </div>
+        </td>
+        <% } %>
+      </tbody>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<div class="navBar">
+    <a href="/">Blogs</a>
+    <a href="/blogcreate">Add a blog post</a>
+    <a href="/editPost">Edit Blog Posts</a>
+    <a href="/about">About</a>
+    <a href="/help">Help</a>
+    <div class="search-Div">
+        <form action="/searchResults" name= "blogSearch" method="post">
+            <input type="text" placeholder="Search the blog.." name="search">
+            <button type="submit" class="searchButton">Search</button>
+        </form>
+    </div>
+</div>

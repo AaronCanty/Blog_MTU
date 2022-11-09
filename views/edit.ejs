@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <% include partials/header %>
+<body>
+<div id="blogpostCreate">
+  <form action="/editPost/edit/<%=bloglist._id %>" method="post">
+  <label class="blogTtitleBox">Title: </label>
+  <input type="text" name="blogtitle" value="<%= bloglist.blogtitle %>">
+    <br> <br> 
+  <label class="descriptionBox">Entry:</label>
+  <br>
+  <textarea type="textarea" name="blogentry" rows="20" cols="70"><%= bloglist.blogentry %> </textarea>
+  <br>
+  <button>submit</button>
+    </form>
+  </div>
+</body>
+</div>
+</html>

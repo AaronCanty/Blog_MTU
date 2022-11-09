@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<% include partials/header %>
+
+  <body>
+    <div id="headerUnderNav">UPDATE | DELETE</div>
+
+      <table>
+        <thead>
+        </thead>
+        <tbody>
+          <% for(var i=0; i < bloglist.length; i++) { %>
+            <tr>
+              <div id="titleHeader">
+                <%= bloglist[i].blogtitle %>
+
+              </div>
+            </tr>
+
+            <tr>
+              <div id="blogEntry">
+                <%= bloglist[i].blogentry %>
+              </div>
+            </tr>
+            <tr>
+
+              <form action="/editPost/edit/<%= bloglist[i]._id %>">
+                <button type="submit" class="editButtons">Edit</button>
+              </form>
+
+              <form action="/editPost/delete/<%= bloglist[i]._id %>" method="post">
+                <button type="submit" class="editButtons">Delete</button>
+              </form>
+
+            </tr>
+            <% } %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+
+</html>
