@@ -19,7 +19,10 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-<div align="center">[![LinkedIn][linkedin-shield]][linkedin-url]
+<div align="center">
+  
+  [![LinkedIn][linkedin-shield]][linkedin-url]
+  
 </div>
 
 
