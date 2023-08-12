@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html>
 <% include partials/header %>
+
 <body>
-  <div id="blogBody">
+  <div class="blogBody">
     <div class="headerUnderNav">AARON'S BLOG</div>
-    <!-- Add a <table> element to properly structure the data -->
-    <table>
-      <thead>
-        <!-- Your table header content here if needed -->
-      </thead>
-      <tbody>
-        <!-- Loop through the bloglist array -->
-        <% for(var i=0; i < bloglist.length; i++) { %>
-        <tr>
-          <td>
-            <div id="titleHeader">
-              <%= bloglist[i].blogtitle %>
-            </div>
-          </td>
-          <td>
-            <div id="blogEntry">
-              <%= bloglist[i].blogentry %>
-            </div>
-          </td>
-          <td>
-            <!-- Move the forms inside the loop to access bloglist[i]._id -->
-            <form action="/editPost/edit/<%= bloglist[i]._id %>">
-              <button type="submit" class="editButtons">Edit</button>
-            </form>
-            <form action="/editPost/delete/<%= bloglist[i]._id %>" method="post">
-              <button type="submit" class="editButtons">Delete</button>
-            </form>
-          </td>
-        </tr>
-        <% } %>
-      </tbody>
-    </table>
+    <!-- Remove the table structure, as it's not necessary for your new format -->
+    <!-- Loop through the bloglist array -->
+    <% for (var i = 0; i < bloglist.length; i++) { %>
+    <article class="blogPost">
+      <p class="blogTitle"><%= bloglist[i].blogtitle %></p>
+      <div class="blogEntry">
+        <%= bloglist[i].blogentry %>
+      </div>
+      <div class="editButtons">
+        <form action="/editPost/edit/<%= bloglist[i]._id %>">
+          <button type="submit" class="editButton">Edit</button>
+        </form>
+        <form action="/editPost/delete/<%= bloglist[i]._id %>" method="post">
+          <button type="submit" class="editButton">Delete</button>
+        </form>
+      </div>
+    </article>
+    <% } %>
   </div>
 </body>
+
 </html>

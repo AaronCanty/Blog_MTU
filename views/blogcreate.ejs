@@ -2,13 +2,13 @@
 <html>
   <% include partials/header %>
 <body>
-<div id="blogpostCreate">
+<div id="blogBody">
   <div id="headerUnderNav">ADD A NEW BLOG POST</div>
 
   <form action="/blogcreate" method="post">
-  <label class="blogTtitleBox">Title: </label>
+  <label>Title: </label>
   <input type="text" name="blogtitle">
-  <label class="descriptionBox">Entry:</label>
+  <label>Entry:</label>
   <textarea type="textarea" name="blogentry" rows="20" cols="80"></textarea>
   <br>
   <button>submit</button>
