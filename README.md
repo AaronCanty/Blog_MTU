@@ -83,6 +83,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 * [![JavaScript][JavaScript.com]][JavaScript-url]
 * [![ExpressJS][Express.js]][Express-url]
 * [![NodeJS][Node.js]][Node-url]
+* [![MongoDB][MongoDB]][MongoDB-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -237,3 +238,5 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [Express-url]: https://expressjs.com/
 [Node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
 [Node-url]: https://nodejs.org/en
+[MongoDB]: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
+[MongoDB-url]: https://www.mongodb.com/
