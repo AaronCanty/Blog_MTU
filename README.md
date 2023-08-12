@@ -19,10 +19,8 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-<p align="center">
-  [![LinkedIn][linkedin-shield]][linkedin-url]
-</p>
-
+<div align="center">[![LinkedIn][linkedin-shield]][linkedin-url]
+</div>
 
 
 <!-- PROJECT LOGO
