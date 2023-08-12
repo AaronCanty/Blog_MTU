@@ -84,6 +84,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 * [![HTML5][HTML5.com]][HTML5-url]
 * [![CSS3][CSS3.com]][CSS3-url]
 * [![JavaScript][JavaScript.com]][JavaScript-url]
+* [![ExpressJS][Express.js]][Express-url]
+* [![NodeJS][Node.js]][Node-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
